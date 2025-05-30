@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo - Página com Barra Universal</title>
+    
+    <!-- Seus estilos existentes -->
+    <style>
+        /* Seus estilos da página */
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da sua página -->
+    <div class="content">
+        <h1>Minha Página</h1>
+        <p>Este é o conteúdo da minha página. A barra superior será inserida automaticamente.</p>
+        <p>O JavaScript da barra não interfere com o JavaScript existente da página.</p>
+    </div>
+    
+    <!-- Incluir a Barra Universal (sempre no final do body) -->
+    <script src="universal-topbar.js"></script>
+    <script src="topbar-config.js"></script>
+    
+    <!-- Seus scripts existentes podem vir depois sem problema -->
+    <script>
+        // Seus scripts existentes da página
+        console.log('Meu script da página funcionando normalmente');
+    </script>
+</body>
+</html>
